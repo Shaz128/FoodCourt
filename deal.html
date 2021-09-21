@@ -1,0 +1,280 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Deal</title>
+	<script>
+	var total=0;
+	
+	function deal1C(){
+	total = total + 380;
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+	
+	function deal1R(){
+	total = total - 380;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML=total;
+	}
+	
+	function deal2C(){
+	total = total + 350;
+document.getElementById("ans").innerHTML = total;
+	}
+
+	function deal2R(){
+	total = total - 350;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	}
+
+	function deal3C(){
+	total = total +420;
+	document.getElementById("ans").innerHTML = total;
+	}
+	function deal3R(){
+	total = total -420;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	}
+	
+	function deal4C(){
+	total = total +700;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal4R(){
+	total = total -700;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+function deal5C(){
+	total = total +450;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal5R(){
+	total = total -450;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+function deal6C(){
+	total = total +650;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal6R(){
+	total = total -650;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+function deal7C(){
+	total = total +1650;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal7R(){
+	total = total -1650;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+
+function deal8C(){
+	total = total +1340;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal8R(){
+	total = total -1340;
+if(total<0){
+total=0;
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+
+function deal9C(){
+	total = total +1900;
+	document.getElementById("ans").innerHTML = total;
+	
+	}	
+	function deal9R(){
+	total = total -1900;
+total=0;
+if(total<0){
+}
+	document.getElementById("ans").innerHTML = total;
+	
+	}
+
+function reload() {
+    reload = location.reload();
+}
+
+reloadButton.addEventListener("click", reload, false);
+
+
+	</script>
+	
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="header">
+		<a href="index.html"><img src="logo1.jpeg" alt="pic" height="80" width="500"></a>
+        &nbsp;
+        <ul>
+        <li><a href="index.html">HomePage</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="billing.html">Billing</a></li>
+        <li><a href="privicy.html">Privicy</a></li>
+        </ul>
+    </nav>
+    <center>
+	
+	<p style="color:c0c7dd; font-size:80px;">your total bill is:<span id ="ans">0</span></p>
+	<form action="billing.html">
+	<button id="billbutton">go to billing</button>
+	</form>
+	<button id="refresh" onClick="window.location.reload();">refresh page</button>
+	<table class="center">
+		<tr>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="d1.png" alt="Card Back" width="350" height="350">
+		<img src="d1c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal1C()" class="text">Add To cart</button>
+		<button onclick="deal1R()" class="text">Remove</button>
+		</center>
+		</td>
+		<br>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="D2.png" alt="Card Back" width="350" height="350">
+		<img src="d2c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal2C()" class="text">Add To cart</button>
+		<button onclick="deal2R()" class="text">Remove</button>
+		</center>
+		</td>
+		<br>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="D3.png" alt="Card Back" width="350" height="350">
+		<img src="d3c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal3C()" class="text">Add To cart</button>
+		<button onclick="deal3R()" class="text">Remove</button>
+		</center>
+		</tr>
+		<br>
+		<td>
+		<div class="container1">
+	    <div class="card">
+	    <img src="D4.png" alt="Card Back" width="350" height="350">
+		<img src="d4c.png" class="img-top" alt="Card Front" width="350" height="350">
+	    </div>
+		</div>
+		<center>
+		<button onclick="deal4C()" class="text">Add To cart</button>
+		<button onclick="deal4R()" class="text">Remove</button>
+		</center>
+	    </td>
+		<br>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="D5.png" alt="Card Back" width="350" height="350">
+		<img src="d5c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal5C()" class="text">Add To cart</button>
+		<button onclick="deal5R()" class="text">Remove</button>
+		</center>
+	    </td>
+	    <br>
+        <td>
+		<div class="container1">
+		<div class="card">
+		<img src="D6.png" alt="Card Back" width="350" height="350">
+		<img src="d6c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal6C()" class="text">Add To cart</button>
+		<button onclick="deal6R()" class="text">Remove</button>
+		</center>
+		</td>
+		</tr>
+		<tr>
+        <td>
+		<div class="container1">
+		<div class="card">
+		<img src="D7.png" alt="Card Back" width="350" height="350">
+		<img src="d7c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal7C()" class="text">Add To cart</button>
+		<button onclick="deal7R()" class="text">Remove</button>
+		</center>
+		</td>
+		<br>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="D8.png" alt="Card Back" width="350" height="350">
+		<img src="d8c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal8C()" class="text">Add To cart</button>
+		<button onclick="deal8R()" class="text">Remove</button>
+		</center>
+	    </td>
+		<br>
+		<td>
+		<div class="container1">
+		<div class="card">
+		<img src="D9.png" alt="Card Back" width="350" height="350">
+		<img src="d9c.png" class="img-top" alt="Card Front" width="350" height="350">
+		</div>
+		</div>
+		<center>
+		<button onclick="deal9C()" class="text">Add To cart</button>
+		<button onclick="deal9R()" class="text">Remove</button>
+		</center>
+	    </td>
+		</tr>	
+	</table>
+    </center>
+</body>
+</html>
